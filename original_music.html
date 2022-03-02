@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="keywords" content="オリジナル曲,ORIGINAL MUSIC">
+    <meta name="description" content="RURUDiA オリジナル曲">
+    <link rel="shortcut icon" href="./img/rurudia.jpg">
+    <link rel="apple-touch-icon" href="./img/rurudia.jpg">
+    <link rel="icon" type="image/png" href="./img/rurudia.jpg">
+    <meta property="og:title" content="RURUDiA | ORIGINAL MUSIC">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.rurudia.jp">
+    <meta property="og:image" content="https://www.rurudia.jp/img/rurudia.jpg">
+    <meta property="og:site_name" content="RURUDiA | ORIGINAL MUSIC">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RURUDiA | ORIGINAL MUSIC">
+    <meta name="twitter:image" content="https://www.rurudia.jp/img/rurudia.jpg">
+    <meta name="twitter:app:country" content="jp">
+    <link rel="stylesheet" href="./css/destyle.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <title>RURUDiA | ORIGINAL MUSIC</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8T7QWMD17"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4ZY9SP2RR0');
+
+        $(function(){
+            let inputs = $('input[name=tab]');
+            let old_click_index = 0;
+            inputs.on('click', function(){
+                let click_index = $(this).val() - 1;
+                $(inputs).each(function(index) {
+                    if(old_click_index !== click_index && click_index !== index) {
+                        $(this).prop('checked', false);
+                    } else if(old_click_index === click_index) {
+                        $(inputs[old_click_index]).prop('checked', false);
+                        click_index = null;
+                    }
+                });
+                old_click_index = click_index;
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo_block">
+            <a href="/"><img class="logo" src="./img/rurudia.png" alt="ロゴ"></a>
+        </div>
+        <nav class="global_nav">
+            <ul class="global_nav_list">
+                <li class="global_nav_list_item"><a href="member.html">MEMBER</a></li>
+                <li class="global_nav_list_item"><a href="schedule.html">SCHEDULE</a></li>
+                <li class="global_nav_list_item"><a href="video.php">VIDEO</a></li>
+                <li class="global_nav_list_item"><a href="regulation.html">REGULATION</a></li>
+                <li class="global_nav_list_item"><a class="active" href="original_music.html">ORIGINAL MUSIC</a></li>
+                <li class="global_nav_list_item"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav class="hamburger_menu">
+            <input type="checkbox" id="menu_btn_check">
+            <label for="menu_btn_check" class="menu_btn"><span></span></label>
+            <div class="menu_content">
+                <ul>
+                    <li>
+                        <a href="member.html">MEMBER</a>
+                    </li>
+                    <li>
+                        <a href="schedule.html">SCHEDULE</a>
+                    </li>
+                    <li>
+                        <a href="video.php">VIDEO</a>
+                    </li>
+                    <li>
+                        <a href="regulation.html">REGULATION</a>
+                    </li>
+                    <li>
+                        <a href="original_music.html">ORIGINAL MUSIC</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="original_music_block">
+            <h1>ORIGINAL MUSIC</h1>
+            <div class="tab-wrap">
+                <input id="tab_1" type="radio" name="tab" class="tab-switch" value="1" checked/>
+                <label class="tab-label" for="tab_1">Best moment</label>
+                <div class="tab-content">
+                    作詞曲編　GaGa Ball Club<br><br><br>
+                    動き始めた時計の針を背中に<br>
+                    心を込めて<br>
+                    君に届けよう<br>
+                    始まりはいつだって<br>
+                    Best moment Ever<br><br>
+                    はにかんだその笑顔は<br>
+                    まるで太陽のように眩しく見えたんだ<br>
+                    泣き虫なその背中は<br>
+                    なぜか愛らしく、尊いとさえ思ったんだ<br><br>
+                    キミとなら<br>
+                    笑っていられる気がした<br>
+                    キミとならどんな困難も<br>
+                    乗り越えられる気がしたんだ<br><br>
+                    きっと叶えようと誓った<br>
+                    この夢の花を咲かせよう<br>
+                    ボクの想いが届くといいな<br>
+                    ボクの願いが届くといいな<br>
+                    今を・未来を輝かせるんだ<br>
+                    きっと届けようと誓った<br>
+                    この夢の花を咲かせよう<br><br>
+                    変わりゆく街移りゆく心<br>
+                    重ゆく景色 滲みゆく記憶<br>
+                    それでもそばにいるから<br>
+                    この歌と共に<br><br>
+                    たとえ、今、世界が<br>
+                    暗闇に包まれて<br>
+                    悲しみを抱いてても<br>
+                    いつか、射す、ヒカリを<br>
+                    信じて手を繋いでいく<br>
+                    信じてあの場所を目指す<br><br>
+                    ボクたちが<br>
+                    出来ることは一つしかない<br>
+                    キミにその一つを届けたくて<br>
+                    この場所で声を上げるんだ<br><br>
+                    there's a hope<br>
+                    never give up<br><br>
+                    きっと叶えようと誓った<br>
+                    この夢の花を咲かせよう<br>
+                    ボクの想いが届くといいな<br>
+                    ボクの願いが届くといいな<br>
+                    今を・未来を輝かせるんだ<br>
+                    きっと届けようと誓った<br>
+                    この夢の花を咲かせよう<br><br>
+                    変わりゆく街移りゆく心<br>
+                    重ゆく景色 滲みゆく記憶<br>
+                    それでもそばにいるから<br>
+                    この歌と共に<br>
+                </div>
+                <input id="tab_2" type="radio" name="tab" class="tab-switch" value="2"/>
+                <label class="tab-label" for="tab_2">夢の彼方</label>
+                <div class="tab-content">
+                    作詞曲編　GaGa Ball Club<br><br><br>
+                    舞い散る花の中に<br>
+                    運命がひらりと<br>
+                    その手に向かうよ<br>
+                    今、色鮮やかな世界の中へ<br><br>
+                    とめどない空を 仰いだ ボクの<br>
+                    とめどない想いがカラフルに写る<br><br>
+                    絶えることのない この時の中で<br>
+                    絶えず続く希望がカラフルに染まる<br><br>
+                    こんなにも胸が躍り出すボクの<br>
+                    感情はもう抑えきれないんだ<br>
+                    さあ、走り出そう<br><br>
+                    You & I<br>
+                    一緒ならどこまでも遠い未来の<br>
+                    夢の先の虹の彼方まで行けるから<br><br>
+                    You & I<br>
+                    一緒なら悲しみさえ飛び越えて<br><br>
+                    振り返るな 手を離すな<br>
+                    どんな時も いつだって  You & I<br><br>
+                    風の無い空を 泳いだ 雲の<br>
+                    隙間から覗くのは 僕へのメッセージ<br><br>
+                    変わることのない この街の中で<br>
+                    いつまでも続く想いは 君へのメッセージ<br><br>
+                    こんなにも胸が締め付けられるボクの<br>
+                    衝動はもう抑えきれないんだ<br>
+                    さあ、走り出そう<br>
+                    Nothing to fear<br><br>
+                    同じ空の下に いるから遠く離れていたって<br>
+                    この歌に乗せて この言葉に乗せて<br><br>
+                    You & I<br>
+                    一緒ならどこまでも遠い未来の<br>
+                    夢の先の虹の彼方まで行けるから<br><br>
+                    You & I<br>
+                    一緒なら悲しみさえ飛び越えて<br><br>
+                    振り返るな 手を離すな<br>
+                    どんな時も いつだって  You & I<br>
+                </div>
+                <input id="tab_3" type="radio" name="tab" class="tab-switch" value="3"/>
+                <label class="tab-label" for="tab_3">きみとみらい</label>
+                <div class="tab-content">
+                    作詞曲編　篠崎あやと 橘亮祐<br><br><br>
+                    平凡な日々はすぐに過ぎてくから<br>
+                    新たな扉探しに行こう<br>
+                    広がるBrandnewworld まだ真っ白だけど<br>
+                    一緒に乗り込むんださあみんなで<br><br>
+                    ひとりじゃなかなか越えられない壁も<br>
+                    キミとならば飛んでける<br><br>
+                    どんな未来だって色づいていくんだ<br>
+                    大きなこの世界でキミと出会えたから<br>
+                    出来ないことはどこにもないさ<br>
+                    描いた夢に向かって走り出そう<br><br>
+                    忙しない日々を全力で駆け抜けたら<br>
+                    前を向くのも疲れちゃうよね<br>
+                    広がるNext Stage 隣を見れば<br>
+                    支えてくれるみんなが勇気くれた<br><br>
+                    しりもちついたり弱音吐きそうでも<br>
+                    諦めずに進んでく<br><br>
+                    いつか光だって追い越していくんだ<br>
+                    今この瞬間に奇跡起こせるから<br>
+                    不器用だけど立ち止まらずに<br>
+                    踏み出そう明日はきっと輝くから<br><br>
+                    目指した夢の途中でそれぞれの道を歩むけど<br>
+                    一人じゃないって声は届いてるから<br>
+                    止まることはないよずっとどこまでも<br><br>
+                    どんな未来だって色づいていくんだ<br>
+                    大きなこの世界でキミと出会えたから<br>
+                    出来ないことはどこにもないさ<br>
+                    描いた夢に向かって走り出そう<br>
+                </div>
+                <input id="tab_4" type="radio" name="tab" class="tab-switch" value="4"/>
+                <label class="tab-label" for="tab_4">つぼみのブーケ</label>
+                <div class="tab-content">
+                    作詞YøMe<br>
+                    作曲編曲KEATØN<br><br><br>
+                    君に伝えたなら ねえ君に届くのなら<br>
+                    ただ一輪の僕になろう<br>
+                    ああ 花開け未来<br><br>
+                    色づく想い 秘めては<br>
+                    何も出来ずただ待ち続けてるばかり<br>
+                    味方にだって なれたら…<br>
+                    あと1歩だけ近付けず 隠れ見つめてる<br><br>
+                    つむじ風 怯えてた<br>
+                    あの日までは戻らずに<br>
+                    咲かせて<br><br>
+                    君に聞こえたなら ねえ君に響くのなら<br>
+                    今ここから 始めよう<br>
+                    もう 少しだけ<br>
+                    君に伝えたなら ねえ君に届くのなら<br>
+                    ただ一輪の僕になろう<br>
+                    ああ 花開け未来<br><br>
+                    気付けば想い 溢れて<br>
+                    いつの間にか 君のその肩に触れていた<br>
+                    振り向く視線 笑顔に<br>
+                    間違ってなんかないよって言われた気がした<br><br>
+                    夢にまで 見た場所へ<br>
+                    あの日までは止まらずに<br>
+                    咲かせて<br><br>
+                    君と話せたなら ねえ君と笑えるなら<br>
+                    今ここまで 来たんだ<br>
+                    もう 少しだけ<br>
+                    君と歩けたなら ねえ君と並べるなら<br>
+                    この蕾も 開くだろう<br>
+                    ああ これからさ<br><br>
+                    君に聞こえたなら ねえ君に響くのなら<br>
+                    今ここから 始めよう<br>
+                    もう 少しだけ<br>
+                    君に伝えたなら ねえ君に届くのなら<br>
+                    ただ一輪の僕になろう<br>
+                    ああ 花開け未来<br>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="copyright">© 2021 ADAMASGATI ENTERTAINMENT</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="shortcut icon" href="../img/rurudia.jpg">
+    <link rel="apple-touch-icon" href="../img/rurudia.jpg">
+    <link rel="icon" type="image/png" href="../img/rurudia.jpg">
+    <meta property="og:title" content="RURUDiA | CONTACT">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.rurudia.jp/contact.html">
+    <meta property="og:image" content="https://www.rurudia.jp/img/rurudia.jpg">
+    <meta property="og:site_name" content="RURUDiA | CONTACT">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RURUDiA | CONTACT">
+    <meta name="twitter:image" content="https://www.rurudia.jp/img/rurudia.jpg">
+    <meta name="twitter:app:country" content="jp">
+    <link rel="stylesheet" href="./css/destyle.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+    <title>RURUDiA | CONTACT</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8T7QWMD17"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4ZY9SP2RR0');
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="logo_block">
+        <a href="/"><img class="logo" src="/img/rurudia.png" alt="ロゴ"></a>
+    </div>
+    <nav class="global_nav">
+        <ul class="global_nav_list">
+            <li class="global_nav_list_item"><a href="member.html">MEMBER</a></li>
+            <li class="global_nav_list_item"><a href="schedule.html">SCHEDULE</a></li>
+            <li class="global_nav_list_item"><a href="video.php">VIDEO</a></li>
+            <li class="global_nav_list_item"><a href="regulation.html">REGULATION</a></li>
+            <li class="global_nav_list_item"><a href="original_music.html">ORIGINAL MUSIC</a></li>
+            <li class="global_nav_list_item"><a class="active" href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <nav class="hamburger_menu">
+        <input type="checkbox" id="menu_btn_check">
+        <label for="menu_btn_check" class="menu_btn"><span></span></label>
+        <div class="menu_content">
+            <ul>
+                <li>
+                    <a href="member.html">MEMBER</a>
+                </li>
+                <li>
+                    <a href="schedule.html">SCHEDULE</a>
+                </li>
+                <li>
+                    <a href="video.php">VIDEO</a>
+                </li>
+                <li>
+                    <a href="regulation.html">REGULATION</a>
+                </li>
+                <li>
+                    <a href="original_music.html">ORIGINAL MUSIC</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <div class="contact_block">
+        <h1>CONTACT</h1>
+        <div class="select_form_box">
+            <input class="select_form" id="request" type="radio" name="select_form" value="request">
+            <label for="request">出演依頼される方</label>
+            <input class="select_form"  id="inquiry" type="radio" name="select_form" value="inquiry">
+            <label for="inquiry">お問い合わせされる方</label>
+        </div>
+        <div class="inquiry_box">
+            <form method="POST" action="./form.php">
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">氏名</div>
+                    <input type="text" name="name" value="" required>
+                </div>
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">メールアドレス</div>
+                    <input type="text" name="email" value="" required>
+                </div>
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">お問い合わせ内容</div>
+                    <textarea name="inquiry" value="" required></textarea>
+                </div>
+                <div class="privacy_policy_block">
+                    <input type="checkbox" name="privacy_policy" required><a href="./privacy_policy.html">プライバシーポリシー</a>に同意する
+                </div>
+                <div class="button_block">
+                    <button type="submit">送信</button>
+                </div>
+                <input class="select_form_val" type="hidden" name="select_form_val" value="">
+            </form>
+        </div>
+        <div class="request_box">
+            <form method="POST" action="./form.php">
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">氏名</div>
+                    <input type="text" name="name" value="" required>
+                </div>
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">メールアドレス</div>
+                    <input type="text" name="email" value="" required>
+                </div>
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">主催 or 対バン</div>
+                    <div class="radio_block">
+                        <input id="01" type="radio" name="type" value="主催" required>
+                        <label for="01">主催</label>
+                        <input id="02" type="radio" name="type" value="対バン" required>
+                        <label for="02">対バン</label>
+                    </div>
+                </div>
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">日時</div>
+                    <input type="text" name="date" value="" required placeholder="2021年4月1日(木) 13:00">
+                </div>
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">会場</div>
+                    <input type="text" name="place" value="" required>
+                </div>
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">チケットバック(ギャランティ)</div>
+                    <input type="text" name="ticket_back" value="" required>
+                </div>
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">持ち時間</div>
+                    <input type="text" name="time" value="" required placeholder="20分">
+                </div>
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">マイク本数</div>
+                    <input type="text" name="mike" value="" required placeholder="5本">
+                </div>
+                <div class="input_block">
+                    <div class="required">必須</div>
+                    <div class="input_title">他出演者</div>
+                    <textarea name="performer" value="" required></textarea>
+                </div>
+                <div class="privacy_policy_block">
+                    <input type="checkbox" name="privacy_policy" required><a href="./privacy_policy.html">プライバシーポリシー</a>に同意する
+                </div>
+                <div class="button_block">
+                    <button type="submit">送信</button>
+                </div>
+                <input class="select_form_val" type="hidden" name="select_form_val" value="">
+            </form>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <p class="copyright">© 2021 ADAMASGATI ENTERTAINMENT</p>
+</footer>
+</body>
+</html>
